@@ -14,7 +14,7 @@ interface iChangeParam {
   };
 }
 
-interface iProps {
+export interface iProps {
   onSearch: (param: iState) => void;
 }
 
@@ -56,16 +56,6 @@ const Search = (props: iProps) => {
 
   return (
     <form onSubmit={onClick} className="input-container">
-      {/* <input
-        className="input"
-        placeholder="rating"
-        type="text"
-        name="rating"
-        value={state.rating}
-        onChange={handleChange}
-        required
-      /> */}
-
       <select
         className="select"
         name="rating"
